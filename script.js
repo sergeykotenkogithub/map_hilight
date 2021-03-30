@@ -15,8 +15,23 @@ function map_hilight (a, b, c) {
 	b.classList.toggle(c);
 	var data = $(a).mouseout().data('maphilight') || {};
 	data.alwaysOn = !data.alwaysOn;
-	$(a).data('maphilight', data).trigger('alwaysOn.maphilight');
+	$(a).data('maphilight', data).trigger('alwaysOn.maphilight');	
 })}
+
+// function map_h (e) {
+// 	let map_choose = document.querySelector(".ns2");
+// 	map_choose.addEventListener('mouseover', f => {
+// 	// abb2.classList.toggle(c);
+// 	// var data = $('ns').mouseout().data('maphilight') || {};
+// 	// data.alwaysOn = !data.alwaysOn;
+// 	// $('ns').data('maphilight', data).trigger('alwaysOn.maphilight');
+// 	e.preventDefault();
+// 	var data = $('.ns').mouseout().data('maphilight') || {};
+// 	data.alwaysOn = !data.alwaysOn;
+// 	$('.ns').data('maphilight', data).trigger('alwaysOn.maphilight');
+// })}
+
+
 
 //  Функции
 
@@ -27,6 +42,7 @@ map_hilight ('.ns4', abb4, 'z4') // Большое дальнее
 map_hilight ('.ns5', abb5, 'z5') // Самое дальнее здание
 map_hilight ('.ns6', abb6, 'z6') // Самое самое
 
+// map_h()
 
 // Кнопка
 
@@ -38,6 +54,18 @@ h.addEventListener('click', e => {
 	data.alwaysOn = !data.alwaysOn;
 	$('.ns2').data('maphilight', data).trigger('alwaysOn.maphilight');
 })
+
+// Кнопка 2
+
+let nn = document.querySelector(".uux");
+nn.addEventListener('click', e => {
+	abb5.classList.toggle('z5');
+	e.preventDefault();
+	var data = $('.ns5').mouseout().data('maphilight') || {};
+	data.alwaysOn = !data.alwaysOn;
+	$('.ns5').data('maphilight', data).trigger('alwaysOn.maphilight');
+})
+
 
 // Событие при выходе мышки из поле зрения
 
@@ -124,3 +152,12 @@ $.fn.maphilight.defaults = {
 // 	data.alwaysOn = !data.alwaysOn;
 // 	$('.ns2').data('maphilight', data).trigger('alwaysOn.maphilight');
 // });
+
+// Мышь
+init_pointer ();
+
+init_pointer({
+	pointerColor: "purple", // Css color
+	ringSize: 15, // Pixels
+	ringClickSize: 10 // Pixels when clicking
+})
