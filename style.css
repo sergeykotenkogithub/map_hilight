@@ -34,7 +34,7 @@
     display: block;
     position: absolute;
     top: 8px;
-    left: 460px;
+    left: 540px;
     z-index: 2;
     background: white;
     border: none;
@@ -83,6 +83,16 @@
     margin-bottom: 20px; */
     width: 30px;
     height: 30px;
+    background:#1d71b8;
+    border: none;
+    color: white;
+    border-radius: 20%;
+    outline: none;
+    transition: left 0.8s ease 0s;
+}
+
+.uu:hover {
+    background: #ed8b33;
 }
 
 .btn_center {
@@ -92,5 +102,27 @@
     text-align: center;
     height: 70px;
     padding: 0 30px;
-    background: #E6E2DE;
+    background: #E6E2DE;  
+    transition: left 0.8s ease 0s;  
 }
+
+
+/*  */
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 100px solid #E6E2DE;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    left: -100px;
+}
+
+/* width: 0;
+height: 0;
+border-top: 30px solid transparent;
+border-right: 100px solid #D7E1E8;
+border-bottom: 30px solid transparent;
+position: absolute;
+left: -96px; */
