@@ -1,6 +1,6 @@
 // Изменения блока, в функции к этому блоку добавляется либо убирается другой блок
 
-let abb = document.querySelector(".tt"); //
+// let abb = document.querySelector(".tt"); //
 let abb2 = document.querySelector(".tt2");
 let abb3 = document.querySelector(".tt3");
 let abb4 = document.querySelector(".tt4");
@@ -16,21 +16,22 @@ function map_hilight(a, b, c, d) {
     var data = $(a).mouseout().data("maphilight") || {};
     data.alwaysOn = !data.alwaysOn;
     $(a).data("maphilight", data).trigger("alwaysOn.maphilight");
+	
   });
 }
 
 //  Функции
 
-map_hilight(".ns", abb, "z1", ".ns"); // Мелкое здание
-map_hilight(".ns2", abb2, "z2", ".ns2"); // Большое здание !!!!
+// map_hilight(".map_little", abb, "z1", ".map_little"); // Мелкое здание
+map_hilight(".map_main", abb2, "z2", ".map_main"); // Большое здание !!!!
 map_hilight(".ns3", abb3, "z3", ".ns3"); // Чуть выше большого
 map_hilight(".ns4", abb4, "z4", ".ns4"); // Большое дальнее
 map_hilight(".ns5", abb5, "z5", ".ns5"); // С ребристой крышой здание !!!!
 map_hilight(".ns6", abb6, "z6", ".ns6"); // Самое самое
 
-// Кнопка
+// Кнопка закрытия в окне
 
-map_hilight(".ns2", abb2, "z2", ".uu"); // Большое здание !!!!
+map_hilight(".map_main", abb2, "z2", ".uu"); // Большое здание !!!!
 map_hilight(".ns5", abb5, "z5", ".uux"); // С ребристой крышой здание !!!!
 
 
@@ -45,7 +46,7 @@ function highlighting_toggle(a, b, c) {
 
 // ...............................................................................................................................................
 
-// Выделение цвета:
+// Выделение цвета, библиотека jqery:
 
 $(function () {
   $(".map").maphilight();
