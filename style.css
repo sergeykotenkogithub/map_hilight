@@ -1,4 +1,4 @@
-/* Мелкое здание */
+/* При клике  */
 
 .tt,
 .tt3,
@@ -10,17 +10,12 @@
   border: 1px solid #000;
 }
 
-.tt2, .tt5 {
+.tt2,
+.tt5 {
   width: 500px;
   display: none;
   /* border: 1px solid #000; */
   opacity: 0.8;
-}
-
-
-
-.qaa {
-  position: relative;
 }
 
 /* В js добавляются эти классы при клике */
@@ -37,13 +32,13 @@
 
 /* Большое здание */
 .z2 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 524px;
-    z-index: 2;
-    background: white;
-    border: none;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 524px;
+  z-index: 2;
+  background: white;
+  border: none;
 }
 
 .z3 {
@@ -65,13 +60,13 @@
 }
 
 .z5 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 325px;
-    z-index: 2;
-    background: white;
-    border: none
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 325px;
+  z-index: 2;
+  background: white;
+  border: none;
 }
 
 .z6 {
@@ -81,10 +76,10 @@
   left: 1%;
   z-index: 2;
   background: white;
-  
 }
 
-.uu, .uux {
+.uu,
+.uux {
   /* margin-left: 90%;
     padding-bottom: 15px;
     margin-bottom: 20px; */
@@ -98,7 +93,8 @@
   transition: left 0.8s ease 0s;
 }
 
-.uu:hover, .uux:hover {
+.uu:hover,
+.uux:hover {
   background: #ed8b33;
 }
 
@@ -126,38 +122,13 @@
   left: -100px;
 }
 
-/* width: 0;
-height: 0;
-border-top: 30px solid transparent;
-border-right: 100px solid #D7E1E8;
-border-bottom: 30px solid transparent;
-position: absolute;
-left: -96px; */
-/* 
-area {
-    cursor: url('13.png'),pointer;
-    /* cursor: pointer; */
-/* } */
-/* @charset "UTF-8"; */
-/* * {
-    cursor: url('15.png'),auto;
-} */
-
-/* iframe {
-    cursor: url('14.png'),auto;
-} */
-
-/* body {
-  width: 1200px;
-  margin: 190px auto;
-} */
-
 .a1 {
-    top: 38px;
+  top: 38px;
 }
 
 .container {
-    width: 1200px;
-    margin: 190px auto;
-    position: relative;
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 190px;
 }
