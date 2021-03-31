@@ -1,88 +1,65 @@
-/* При клике  */
+/* Блоки  */
 
 .tt,
 .tt3,
 .tt4,
-.tt5,
-.tt6 {
-  width: 300px;
-  display: none;
-  border: 1px solid #000;
-  
-}
-
-
-
+.map_roof_div,
+.tt6,
 .map_main_div,
-.tt5 {
+.tt5
+ {
   width: 500px;
   display: none;
-  /* border: 1px solid #000; */
-  opacity: 0.8;
-}
-
-/* В js добавляются эти классы при клике */
-
-/* При клике */
-.z1 {
-  display: block;
   position: absolute;
   top: 25%;
   left: 33%;
   z-index: 2;
   background: white;
+  opacity: 0.8;  
+}
+
+/* Скрытые блоки. В js добавляются эти классы при клике */
+
+.z1, .map_main_display, .z3, .z4, .map_roof_display, .z6 {
+  display: block;
+}
+
+.z1 { 
+  top: 25%;
+  left: 33%;
 }
 
 /* Большое здание */
-.z2 {
-  display: block;
-  position: absolute;
+.map_main_display {
   top: 0px;
   left: 524px;
-  z-index: 2;
-  background: white;
-  border: none;
 }
 
 .z3 {
-  display: block;
-  position: absolute;
   top: 2%;
   left: 26%;
-  z-index: 2;
-  background: white;
 }
 
 .z4 {
-  display: block;
-  position: absolute;
   top: 2%;
   left: 40%;
-  z-index: 2;
-  background: white;
 }
 
-.z5 {
-  display: block;
-  position: absolute;
+/* С рельевной крышей */
+.map_roof_display {
   top: 0px;
   left: 325px;
-  z-index: 2;
-  background: white;
-  border: none;
 }
 
 .z6 {
-  display: block;
-  position: absolute;
   top: 5%;
   left: 1%;
-  z-index: 2;
-  background: white;
 }
 
-.uu,
-.uux {
+
+/* Кнопки закрытия окна */
+
+.map_btn {
   /* margin-left: 90%;
     padding-bottom: 15px;
     margin-bottom: 20px; */
@@ -96,12 +73,13 @@
   transition: left 0.8s ease 0s;
 }
 
-.uu:hover,
-.uux:hover {
+.map_btn:hover {
   background: #ed8b33;
 }
 
-.btn_center {
+/* Заголовок в окне */
+
+.map_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,7 +91,7 @@
   position: relative;
 }
 
-/*  */
+/* Стрелки */
 
 .arrow-right {
   width: 0;
@@ -125,9 +103,13 @@
   left: -100px;
 }
 
-.a1 {
+/* Вторая стрелка c рельефной крышей */
+
+.arrow_roof {
   top: 38px;
 }
+
+/* Начальный контейнер */
 
 .container {
   width: 1024px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Стрелка -->
     <link
       href="https://seattleowl.com/pointer.js/pointer.css"
       rel="stylesheet"
@@ -13,7 +14,7 @@
   <body>
 
     <div class="container">        
-      <img class="qaa map" src="1.jpg" alt="1" usemap="#Navigation" />
+      <img class="map" src="1.jpg" alt="1" usemap="#Navigation" />
       <map name="Navigation">         
         <!-- Мелкое здание --> 
         <!-- <area
@@ -45,7 +46,7 @@
         />
         <!-- С ребристой крышой 223 -->
         <area
-          class="ns5"
+          class="map_roof"
           shape="poly"
           coords="152,87,143,30,154,30,154,26,173,24,180,24,220,33,225,93,188,100"
           alt="5"
@@ -70,9 +71,9 @@
 
       <!-- Для большого -->
       <div class="map_main_div">
-        <div class="btn_center">
+        <div class="map_title"> 
           <h3>Главный корпус</h3>
-          <button class="uu">X</button>
+          <button class="map_btn map_main_div_btn">X</button>
         </div>        
         <!-- Стрелка -->
         <div class="arrow-right"></div>       
@@ -100,13 +101,13 @@
 
       <!-- С ребристой крышой -->
       <!-- z5 ns -->
-      <div class="tt5">
-        <div class="btn_center">
+      <div class="map_roof_div">
+        <div class="map_title">
           <h3>Какое-то здание</h3>
-          <button class="uux">X</button>
+          <button class="map_btn map_roof_div_btn">X</button>
         </div>
 
-        <div class="ooo arrow-right a1"></div>        
+        <div class="arrow-right arrow_roof"></div>        
         <div class="sketchfab-embed-wrapper">
           <iframe
             title="house"
