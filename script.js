@@ -1,7 +1,7 @@
 // Изменения блока, в функции к этому блоку добавляется либо убирается другой блок
 
 // let abb = document.querySelector(".tt"); //
-let abb2 = document.querySelector(".tt2");
+let abb2 = document.querySelector(".map_main_div");
 let abb3 = document.querySelector(".tt3");
 let abb4 = document.querySelector(".tt4");
 let abb5 = document.querySelector(".tt5");
