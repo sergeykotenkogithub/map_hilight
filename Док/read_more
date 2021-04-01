@@ -111,3 +111,29 @@
 
  <!-- Добавить ссылку можно -->
         <!-- <area shape="poly" coords="70,134,61,75,106,70,148,78,147,113" href="#" alt=""> -->
+
+\\\
+Запасной вариант
+
+function map_hilight(a, b, c, d) {
+  let map_choose = document.querySelector(d);
+  map_choose.addEventListener("click", (e) => {
+    e.preventDefault();
+    b.classList.toggle(c);
+    var data = $(a).mouseout().data("maphilight") || {};
+    data.alwaysOn = !data.alwaysOn;
+    $(a).data("maphilight", data).trigger("alwaysOn.maphilight");
+    if (a === ".map_main") {
+      map_roof.classList.remove("map_roof_display")     
+      var datas = $(".map_roof").mouseout().data("maphilight") || {};
+      datas.alwaysOn = false;
+      $(".map_roof").data("maphilight", datas).trigger("alwaysOn.maphilight");
+    }
+    if (a === ".map_roof") {
+      map_main.classList.remove("map_main_display")     
+      var datas = $(".map_main").mouseout().data("maphilight") || {};
+      datas.alwaysOn = false;
+      $(".map_main").data("maphilight", datas).trigger("alwaysOn.maphilight");
+    }
+  });
+}

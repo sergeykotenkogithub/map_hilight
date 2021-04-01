@@ -46,6 +46,7 @@
 }
 
 /* С рельевной крышей */
+
 .map_roof_display {
   top: 0px;
   left: 325px;
@@ -60,9 +61,6 @@
 /* Кнопки закрытия окна */
 
 .map_btn {
-  /* margin-left: 90%;
-    padding-bottom: 15px;
-    margin-bottom: 20px; */
   width: 30px;
   height: 30px;
   background: #1d71b8;
@@ -117,5 +115,7 @@
   position: relative;
   margin-top: 190px;
 }
+
+
 
 
