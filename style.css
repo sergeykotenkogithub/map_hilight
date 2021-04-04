@@ -32,7 +32,7 @@
 /* Большое здание */
 .map_main_display {
   top: 0px;
-  left: 524px;
+  left: 524px;  
 }
 
 .z3 {
@@ -68,11 +68,12 @@
   color: white;
   border-radius: 20%;
   outline: none;
-  transition: left 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .map_btn:hover {
   background: #ed8b33;
+  transition: all 0.8s ease 0s;
 }
 
 /* Заголовок в окне */
@@ -85,7 +86,7 @@
   height: 70px;
   padding: 0 30px;
   background: #e6e2de;
-  transition: left 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   position: relative;
 }
 
@@ -116,6 +117,24 @@
   margin-top: 190px;
 }
 
+.modal {
+  min-width: 960px !important;
+}
 
+.px {
+  margin-top: 50px;
+  text-align: center;
+}
 
+button {
+  width: 135px;
+  height: 80px;
+  background: blue;
+  color: white;
+  text-decoration: none;
+}
 
+a {
+  color: white;
+  text-decoration: none;
+}
