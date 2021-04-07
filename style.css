@@ -1,4 +1,7 @@
 /* Блоки  */
+body {
+  background: blanchedalmond;
+}
 
 .tt,
 .tt3,
@@ -6,33 +9,45 @@
 .map_roof_div,
 .tt6,
 .map_main_div,
-.tt5
- {
+.tt5 {
   width: 500px;
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 25%;
   left: 33%;
   z-index: 2;
   background: white;
-  opacity: 0.8;  
+  opacity: 0.8;
+  left: -100%; 
+  
 }
 
 /* Скрытые блоки. В js добавляются эти классы при клике */
 
-.z1, .map_main_display, .z3, .z4, .map_roof_display, .z6 {
-  display: block;
+.z1,
+.map_main_display,
+.z3,
+.z4,
+.map_roof_display,
+.z6 {
+  /* display: block; */
+  /* transform: translateX(10000px); */
+  /* left: 0; */
+  /* transition: left 0.8s ease;   */
 }
 
-.z1 { 
+.z1 {
   top: 25%;
   left: 33%;
 }
 
 /* Большое здание */
 .map_main_display {
-  top: 0px;
-  left: 524px;  
+  top: -12px;
+  left: 410px;
+  perspective: 400px;
+  transform: perspective(206px) rotatey(-7deg);
+  transition: transform 0.8s ease; 
 }
 
 .z3 {
@@ -50,13 +65,14 @@
 .map_roof_display {
   top: 0px;
   left: 325px;
+  transform: perspective(400px) rotate3d(-15, 135, -25, 15deg);
+  transition: transform 0.8s ease;
 }
 
 .z6 {
   top: 5%;
   left: 1%;
 }
-
 
 /* Кнопки закрытия окна */
 
@@ -92,7 +108,7 @@
 
 /* Стрелки */
 
-.arrow-right {
+/* .arrow-right {
   width: 0;
   height: 0;
   border-top: 30px solid transparent;
@@ -100,12 +116,22 @@
   border-bottom: 30px solid transparent;
   position: absolute;
   left: -100px;
+} */
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 46px solid #e6e2de;
+  border-bottom: 13px solid transparent;
+  position: absolute;
+  left: -45px;
 }
 
 /* Вторая стрелка c рельефной крышей */
 
 .arrow_roof {
-  top: 38px;
+  top: 42px;
 }
 
 /* Начальный контейнер */
@@ -114,7 +140,11 @@
   width: 1024px;
   margin: 0 auto;
   position: relative;
-  margin-top: 190px;
+  margin-top: 190px;  
+}
+
+.wrapper {
+  box-shadow: 16px 30px 10px 5px rgb(0 0 0 / 50%);
 }
 
 .modal {
@@ -132,9 +162,15 @@ button {
   background: blue;
   color: white;
   text-decoration: none;
+  border: none; 
+  border-radius: 30%;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+.btn_modal {
+  box-shadow: 10px 15px 8px 5px rgb(0 0 0 / 50%);
 }
